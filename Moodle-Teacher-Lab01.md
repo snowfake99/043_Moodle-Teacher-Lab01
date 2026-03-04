@@ -99,6 +99,7 @@ Course ID number: [รหัสวิชา (ถ้ามี)]
 
 #### **1.2 การเขียนคำอธิบายรายวิชา (Course Summary)**
 Course summary : ข้อมูลสรุปเกี่ยวกับรายวิชา จะแสดงข้อมูลในหน้า Home ของ LMS
+
 Course image : เลือกรูปภาพของรายวิชา รูปภาพจะแสดงในหน้า Home และ My courses 
 
 เขียน Course summary ตามโครงสร้างนี้:
@@ -192,6 +193,8 @@ Course format → เลือก "Custom sections"
    
   
 **ตัวอย่างโครงสร้าง Gradebook:**
+- **หมายเหตุ 1** คลิกเลือก Weight adjusted เพื่อให้มีช่องสำหรับระบุ Weight
+- **หมายเหตุ 2** Grade Items จะเพิ่มเติมเข้ามาโดยอัตโนมัติ เมื่อมีการสร้างแบบประเมิน หรือ Assignments ในการทดลอง ให้ทดลองสร้างเองก่อน แต่สามารถแก้ไขภายหลังได้
 ```
 ### Course Weights Total (100%)
 ├─ **Category: แบบทดสอบ** (Weight 30%)
@@ -815,9 +818,9 @@ Description:
 ```
 
 3. **ตั้งค่าตัวเลือก (Options):**
-  Allow choice to be updated: No (ห้ามเปลี่ยนใจ)
-  Allow more than one choice to be selected: No (ให้เลือกได้ 1 ตัวเลือกเท่านั้น)
-  Limit the number of responses allowed: Yes
+  - Allow choice to be updated: No (ห้ามเปลี่ยนใจ)
+  - Allow more than one choice to be selected: No (ให้เลือกได้ 1 ตัวเลือกเท่านั้น)
+  - Limit the number of responses allowed: Yes
 **Option 1:**
 ```
 Choice 1: 🛒 หัวข้อที่ 1: [ชื่อหัวข้อ]
@@ -927,7 +930,8 @@ Navigation method: Free (ข้ามไปมาได้)
 
 How questions behave: Deferred feedback
    (ดูผลหลังส่งข้อสอบทั้งหมด)
-
+Each attempt builds on the last: No
+```
 | ตัวเลือก (Behavior) | เห็นคะแนนเมื่อไหร่? | แก้ตัวในข้อเดิมได้ไหม? | เหมาะกับงานประเภทใด |
 | :--- | :--- | :--- | :--- |
 | **Deferred feedback** | หลังส่งข้อสอบทั้งชุด | **ไม่ได้** | สอบกลางภาค / ปลายภาค (เน้นความปลอดภัย) |
@@ -935,8 +939,6 @@ How questions behave: Deferred feedback
 | **Immediate feedback** | หลังกดตรวจทีละข้อ | **ไม่ได้** | ทดสอบความรู้สั้นๆ ที่ต้องการให้รู้ผลทันที |
 | **Adaptive mode** | ทันทีที่กดส่งข้อนั้น | **ได้** (ตอบจนกว่าจะถูก) | การเรียนรู้ด้วยตนเอง / ฝึกทักษะเฉพาะทาง |
 
-Each attempt builds on the last: No
-```
 
 7. **Review options:**
 ```
